@@ -9,7 +9,8 @@ import {
   Settings, 
   UserCog,
   LogOut,
-  Receipt
+  Receipt,
+  Brain
 } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 
@@ -28,6 +29,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentSection, onSectionChange }) =>
     { id: 'inventory', icon: Archive, label: 'Inventario', roles: ['admin', 'cashier'] },
     { id: 'invoicing-history', icon: FileText, label: 'Historial facturación', roles: ['admin', 'cashier'] },
     { id: 'dte', icon: Receipt, label: 'DTE', roles: ['admin', 'cashier'] },
+    { id: 'inventario-ia', icon: Brain, label: 'Gestión IA Inventarios', roles: ['admin', 'cashier'] },
     { id: 'permissions', icon: Shield, label: 'Permisos', roles: ['admin'] },
     { id: 'user-management', icon: UserCog, label: 'Administrar usuarios', roles: ['admin'] },
     { id: 'configuration', icon: Settings, label: 'Configuración', roles: ['admin'] },
